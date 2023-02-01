@@ -4,7 +4,7 @@
         <title>inTheUA.com</title>
         <link>https://tirexart.github.io</link>
         <description>Your blog description</description>
-        <lastBuildDate>Wed, 01 Feb 2023 09:24:12 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Feb 2023 10:11:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -26,10 +26,13 @@
 <pre><code>&lt;CldImage
   width=&quot;600&quot;
   height=&quot;600&quot;
-  src=&quot;How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_r3x0ml.jpg&quot;
+  src=&quot;How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_r3x0ml&quot;
   alt=&quot;test Image&quot;
 /&gt;
 </code></pre>
+<img alt="test Image" srcSet="https://res.cloudinary.com/intheua/image/upload/c_limit,w_600/f_auto/q_auto/v1/image/upload/s--3ATCEnjW--/v1674301429/How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_imqxmz.jpg?_a=AVFLRAN0 1x, https://res.cloudinary.com/intheua/image/upload/c_limit,w_600/f_auto/q_auto/v1/image/upload/s--3ATCEnjW--/v1674301429/How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_imqxmz.jpg?_a=AVFLRAN0 2x" src="https://res.cloudinary.com/intheua/image/upload/c_limit,w_600/f_auto/q_auto/v1/image/upload/s--3ATCEnjW--/v1674301429/How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_imqxmz.jpg?_a=AVFLRAN0" width="600" height="600" decoding="async" data-nimg="1" loading="lazy" style="color:transparent"/>
+<img alt="test Image" srcSet="https://res.cloudinary.com/intheua/image/upload/c_limit,w_600/f_auto/q_auto/v1//image/upload/s--3ATCEnjW--/v1674301429/How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_imqxmz.jpg?_a=AVFLRAN0 1x, https://res.cloudinary.com/intheua/image/upload/c_limit,w_600/f_auto/q_auto/v1//image/upload/s--3ATCEnjW--/v1674301429/How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_imqxmz.jpg?_a=AVFLRAN0 2x" src="https://res.cloudinary.com/intheua/image/upload/c_limit,w_600/f_auto/q_auto/v1//image/upload/s--3ATCEnjW--/v1674301429/How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_imqxmz.jpg?_a=AVFLRAN0" width="600" height="600" decoding="async" data-nimg="1" loading="lazy" style="color:transparent"/>
+<img alt="test Image" srcSet="https://res.cloudinary.com/intheua/image/upload/c_limit,w_600/f_auto/q_auto/How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_imqxmz.jpg?_a=AVFLRAN0 1x, https://res.cloudinary.com/intheua/image/upload/c_limit,w_600/f_auto/q_auto/How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_imqxmz.jpg?_a=AVFLRAN0 2x" src="https://res.cloudinary.com/intheua/image/upload/c_limit,w_600/f_auto/q_auto/How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_imqxmz.jpg?_a=AVFLRAN0" width="600" height="600" decoding="async" data-nimg="1" loading="lazy" style="color:transparent"/>
 <p>Сувій знайшли в археологічній зоні Саккара – це перша знахідка повного папірусного документа за століття.</p>
 <p>test2</p>
 <img alt="test2" src="https://res.cloudinary.com/intheua/image/upload/v1674301429/How_is_Ukraine_using_western_weapons_to_exploit_Russian_weaknesses_q1x46v_imqxmz.jpg" decoding="async" data-nimg="1" class="h-700 w-700" loading="lazy" style="color:transparent"/>
