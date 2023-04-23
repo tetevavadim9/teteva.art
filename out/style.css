@@ -7,19 +7,19 @@
 }
 
 @font-face {
-  font-family: "DM Mono";
+  font-family: "IBM Plex Sans";
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url("/dm-mono.woff2");
+  src: url("/IBMPlexSans-Regular.woff2");
 }
 
 @font-face {
-  font-family: "DM Mono";
+  font-family: "IBM Plex Sans";
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-  src: url("/dm-mono-italic.woff2");
+  src: url("/IBMPlexSans-Italic.woff2");
 }
 
 * {
@@ -115,7 +115,7 @@ nav {
   position: sticky;
   align-self: start;
   top: 5rem;
-  font-family: "DM Mono";
+  font-family: "IBM Plex Sans";
   font-size: 0.85rem;
 }
 nav > span {
@@ -146,11 +146,11 @@ nav time {
 }
 
 article {
-  font-family: "DM Mono";
-  font-size: 1rem; /** vadim orig 0.85rem **/
+  font-family: "IBM Plex Sans";
+  font-size: 0.85rem; /** vadim orig 0.85rem **/
   max-width: 50ch;
   margin-bottom: 3rem;
-  padding-inline: 1.1rem; /** vadim orig 1rem **/
+  padding-inline: 1rem; /** vadim orig 1rem **/
   text-align: justify;
   scroll-margin-top: 5rem;
 }
@@ -166,7 +166,7 @@ article:not(:last-child):after {
 }
 
 time {
-  font-size: 0.85rem;
+  font-size: 0.75rem; /** vadim orig 0.85rem **/
   display: block;
   margin-bottom: 2rem;
   text-align: left;
@@ -175,7 +175,7 @@ time {
 
 pre {
   font-family: inherit;
-  font-size: 0.85rem;
+  font-size: 1rem; /** vadim orig 0.85rem **/
   margin-top: 0;
   margin-bottom: 2rem;
   white-space: pre-line;
@@ -194,7 +194,7 @@ pre ~ address:before {
 }
 
 form {
-  font-family: "DM Mono";
+  font-family: "IBM Plex Sans";
   font-size: 1.25rem;
   position: absolute;
   top: 0;
@@ -237,7 +237,7 @@ input:focus {
 
 button {
   font: inherit;
-  font-family: "DM Mono";
+  font-family: "IBM Plex Sans";
   font-size: 1.25rem;
   position: absolute;
   z-index: 2;

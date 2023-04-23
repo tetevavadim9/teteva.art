@@ -7,19 +7,19 @@
 }
 
 @font-face {
-  font-family: "DM Mono";
+  font-family: "IBM Plex Sans";
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url("/dm-mono.woff2");
+  src: url("/IBMPlexSans-Regular.woff2");
 }
 
 @font-face {
-  font-family: "DM Mono";
+  font-family: "IBM Plex Sans";
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-  src: url("/dm-mono-italic.woff2");
+  src: url("/IBMPlexSans-Italic.woff2");
 }
 
 * {
@@ -68,7 +68,7 @@ h1 {
 }
 
 h2 {
-  font-family: "DM Mono";
+  font-family: "IBM Plex Sans";
   font-size: 1.5rem;
   font-weight: normal;
   margin-bottom: 3rem;
@@ -76,7 +76,7 @@ h2 {
 }
 
 pre {
-  font-family: "DM Mono";
+  font-family: "IBM Plex Sans";
   font-size: 1.5rem;
   max-width: 50ch;
   height: 10rem;
