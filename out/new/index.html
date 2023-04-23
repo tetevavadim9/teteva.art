@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stillness.Digital | A Place To Rest</title>
+    <meta name="generator" content="Eleventy" />
+    <meta
+      name="description"
+      content="Stillness is a blog. Have a look: “"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/meta/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/meta/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/meta/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/meta/site.webmanifest" />
+    <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#030303" />
+    <link rel="me" href="https://front-end.social/@henry">
+    <meta name="msapplication-TileColor" content="#efefef" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@404boyfriend" />
+    <meta name="twitter:title" content="Stillness.Digital | A Place To Rest" />
+
+    <meta
+      name="twitter:image"
+      content="https://stillness.digital/meta/og.png"
+    />
+    
+      <meta
+        name="twitter:description"
+        content="A website built just for you, which expects nothing of your time. Breathe freely, old friend."
+      />
+    
+
+    <meta property="og:title" content="Stillness.Digital | A Place To Rest" />
+    <meta property="og:image" content="https://stillness.digital/meta/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+      <meta property="og:image:type" content="image/jpg" />
+    
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    
+<main>
+  <button id="getgeo">Add GPS</button>
+  <form id="form">
+    <textarea name="body"></textarea>
+    <button type="submit">submit</button>
+  </form>
+</main>
+
+<script>
+  const form = document.querySelector("#form");
+  const button = document.querySelector("#getgeo");
+  let currentLocation = null;
+  let gps = false;
+
+  const handleGeoSuccess = (position) => {
+    gps = true;
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    currentLocation = [latitude, longitude].map((segment) =>
+      segment.toFixed(2)
+    );
+    button.textContent = currentLocation;
+  };
+  const handleGeoError = (err) => {
+    console.error(err);
+    button.textContent = `error`;
+  };
+
+  button.addEventListener("click", (e) => {
+    navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError);
+  });
+  const handleSubmission = (e) => {
+    e.preventDefault();
+
+    const text = e.target.elements.body.value;
+    const date = new Date();
+
+    const template = `---
+date: ${date.toISOString()}
+${(gps && `gps: [${currentLocation}]`) || ""}
+---
+${text}`;
+
+    const message = `📄 - Create new post: ${date}`;
+    const ghQueryUrl = `https://github.com/xdesro/stillness/new/main/posts?filename=posts%2F${date}.html&value=${encodeURIComponent(
+      template
+    )}&message=${encodeURIComponent(message)}`;
+    window.location.href = ghQueryUrl;
+  };
+
+  form.addEventListener("submit", handleSubmission);
+</script>
+
+    <script>
+      console.log(
+        "❧ hey. i’m henry (https://henry.codes) — idk why I made this, just wanted to put something nice and quiet out there on the web today.\n\n",
+        "❧ it’s just one html file with like some css and a script tag to print this text.\n\n",
+        "❧ the font is margot lévêque’s ninna. — https://margotleveque.com/collections/ninna\n\n",
+        "❧ stay safe out there."
+      );
+    </script>
+  </body>
+</html>
