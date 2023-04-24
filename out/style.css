@@ -80,7 +80,7 @@ h1:first-letter {
 h1 em {
   font-style: normal;
   font-feature-settings: "ss07", "ss12";
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 50%); /** color: hsl(0, 0%, 100%); < PLOTTER > vadim **/
 }
 
 a {
@@ -103,7 +103,7 @@ p {
 aside {
   font-size: 4rem;
   font-feature-settings: "ss14";
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 50%); /** color: hsl(0, 0%, 100%); < & (main)> vadim **/
 }
 
 main {
@@ -147,7 +147,7 @@ nav time {
 
 article {
   font-family: "IBM Plex Sans";
-  font-size: 0.85rem; /** vadim orig 0.85rem **/
+  font-size: 1rem; /** vadim orig 0.85rem **/
   max-width: 50ch;
   margin-bottom: 3rem;
   padding-inline: 1rem; /** vadim orig 1rem **/
@@ -162,7 +162,7 @@ article:not(:last-child):after {
   display: block;
   content: "&";
   text-align: center;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 50%); /** color: hsl(0, 0%, 100%); < & > vadim **/
 }
 
 time {
